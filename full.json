@@ -1,0 +1,165 @@
+{
+    "intents": [
+        {
+            "tag": "greeting",
+            "patterns": ["Hi","hi", "Hey", "hey","How are you", "Is anyone there?", "Hello", "Good day", "Whats up"],
+            "responses": ["Welcome to our restaurant! How can I assist you today?", "Hello! How may I help you with our menu?", "Hi there! Ready to explore our delicious dishes?"],
+            "context_set": ""
+        },
+
+        {
+            
+            "tag": "book_table",
+            "patterns": ["Book a table", "Can I book a table?", "I want to book a table", "Book seat", "I want to book a seat", "Can I book a seat?"],
+            "responses": ["Your seat has been booked. Booking ID is: {{booking_id}}. For more details about your bookings, please visit our website."],
+            "context_set": ""
+        },
+
+        {
+            "tag": "available_tables",
+            "patterns": ["How many seats are available?", "Available seats", "How many tables are available?", "Available tables"],
+            "responses": ["Currently, we have several tables available. You can book a table by calling us at (123) 456-7890 or visiting our website."],
+            "context_set": ""
+        },
+        {
+            "tag": "bye",
+            "patterns": ["cya", "bye","See you later", "Goodbye", "I am Leaving", "Have a Good day", "cya later", "I gotta go now", "I gotta rush now"],
+            "responses": ["Thank you for dining with us at Sarovar South Spice! Have a wonderful day!", "Goodbye! Hope to see you again soon at Sarovar South Spice.", "Take care! Come back again for more South Indian delights at Sarovar South Spice!"],
+            "context_set": ""
+        },
+        {
+            "tag": "age",
+            "patterns": ["how old", "how old is Dexter", "what is your age", "how old are you", "age?"],
+            "responses": ["Our Sarovar South Spice restaurant is fresh and new, just like the flavors we serve!"],
+            "context_set": ""
+        },
+        {
+            "tag": "name",
+            "patterns": ["what is your name", "what should I call you", "whats your name?"],
+            "responses": ["You can call me Dexter, your guide to Sarovar South Spice's culinary delights!", "I'm Dexter, here to assist you with our menu at Sarovar South Spice.", "I'm Dexter, your companion for South Indian cuisine at Sarovar South Spice!"],
+            "context_set": ""
+        },
+        {
+            "tag": "hours",
+            "patterns": ["when are you guys open", "what are your hours", "hours of operation", "hours", "what is the timing"],
+            "responses": ["We are open from 11am to 10pm every day to serve you the best of South Indian cuisine at Sarovar South Spice!"],
+            "context_set": ""
+        },
+        {
+            "tag": "menu",
+            "patterns": ["I'd like to order something","menu", "whats on the menu", "what do you recommend?", "could i get something to eat", "Im hungry","list of food items", "hotel menu"],
+            "responses": [
+                "Sure! Here's our menu:\n- Idli\n- Dosa\n- Uttapam\n- Vada\n- Sambar\n- Rasam\n- Curry\n- Biryani\n- Paneer Tikka\n- Butter Chicken"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "contact",
+            "patterns": ["contact information", "contact us", "how can i contact you", "can i get the contact details", "I wanna give some feedback", "how can i give some feedback?"],
+            "responses": ["You can contact us at contact@sarovarsouthspice.com for any queries or feedback regarding Sarovar South Spice."],
+            "context_set": ""
+        },
+        {
+            "tag": "address",
+            "patterns": ["what is the location?", "whats the location", "where are you located?", "where is the restaurant located?", "address", "whats the address?"],
+            "responses": ["You can find Sarovar South Spice at No. 123, South Indian Street, Mylapore, Chennai, Tamil Nadu 600004."],
+            "context_set": ""
+        },
+        {
+            "tag": "special_dish",
+            "patterns": ["What's your special dish?", "Do you have any specialty?", "What's the chef's recommendation?", "Any signature dishes?"],
+            "responses": ["Our chef recommends trying our famous Masala Dosa or the flavorful Chettinad Chicken Curry!"],
+            "context_set": ""
+        },
+        {
+            "tag": "vegetarian_options",
+            "patterns": ["Do you have vegetarian options?", "Are there any veg dishes?", "I'm vegetarian, what do you recommend?"],
+            "responses": ["Absolutely! We have a wide range of delicious vegetarian options like Idli, Sambar, and Vegetable Uttapam."],
+            "context_set": ""
+        },
+        {
+            "tag": "spice_level",
+            "patterns": ["How spicy are your dishes?", "Can I choose the spice level?", "I can't handle much spice, what do you suggest?"],
+            "responses": ["Our dishes are customizable! Just let us know your preference, and we'll adjust the spice level accordingly."],
+            "context_set": ""
+        },
+        {
+            "tag": "delivery",
+            "patterns": ["Do you offer delivery?", "Can I get the food delivered?", "Do you have a delivery service?"],
+            "responses": ["Yes, we offer delivery services! You can place your order through our website or by calling us at (123) 456-7890."],
+            "context_set": ""
+        },
+        {
+            "tag": "payment_methods",
+            "patterns": ["What payment methods do you accept?", "Do you accept credit cards?", "Can I pay with cash?"],
+            "responses": ["We accept all major credit cards, as well as cash payments for your convenience."],
+            "context_set": ""
+        },
+        {
+            "tag": "wifi",
+            "patterns": ["Do you provide WiFi?", "Is there WiFi available?", "Can I access WiFi at your restaurant?"],
+            "responses": ["Yes, we provide complimentary WiFi to our guests at Sarovar South Spice."],
+            "context_set": ""
+        },
+        {
+            "tag": "ambiance",
+            "patterns": ["What's the ambiance like?", "How is the atmosphere at your restaurant?", "Can you describe the restaurant's vibe?"],
+            "responses": ["At Sarovar South Spice, we offer a cozy and welcoming ambiance, perfect for enjoying authentic South Indian cuisine with your loved ones."],
+            "context_set": ""
+        },
+        {
+            "tag": "takeaway",
+            "patterns": ["Takeaway?", "Takeout?", "Can I get it to go?"],
+            "responses": ["Yes, we offer takeaway services. Just let us know your order, and we'll have it ready for you to pick up!"],
+            "context_set": ""
+        },
+        {
+            "tag": "reservation_policy",
+            "patterns": ["Reservation?", "Book a table?", "Do I need to reserve?"],
+            "responses": ["Reservations are recommended, especially during busy hours. Walk-ins are also welcome, subject to table availability."],
+            "context_set": ""
+        },
+        {
+            "tag": "chef_recommendation",
+            "patterns": ["Chef's recommendation?", "Specialty dish?", "What's good today?"],
+            "responses": ["Our chef recommends trying our signature Masala Dosa or the flavorful Chettinad Chicken Curry!"],
+            "context_set": ""
+        },
+        {
+            "tag": "group_bookings",
+            "patterns": ["Group bookings?", "Large parties?", "Can I book for a group?"],
+            "responses": ["Yes, we accommodate group bookings. Please contact us in advance to reserve a table for your large party."],
+            "context_set": ""
+        },
+        {
+            "tag": "customer_reviews",
+            "patterns": ["Reviews?", "Customer feedback?", "What do others say?"],
+            "responses": ["Check out our website for customer reviews and testimonials! We value your feedback."],
+            "context_set": ""
+        },
+        {
+            "tag": "loyalty_program",
+            "patterns": ["Loyalty program?", "Rewards for regulars?", "Do you have a points system?"],
+            "responses": ["Yes, join our loyalty program to earn points with every visit and enjoy exclusive rewards and discounts!"],
+            "context_set": ""
+        },
+        {
+            "tag": "special_occasions",
+            "patterns": ["Special events?", "Private parties?", "Can you host a celebration?"],
+            "responses": ["Celebrate your special occasions with us! We offer catering services and event hosting. Contact us for details."],
+            "context_set": ""
+        },
+        {
+            "tag": "online_ordering",
+            "patterns": ["Online ordering?", "Delivery?", "Can I order through your website?"],
+            "responses": ["Order online for delivery or takeaway! Visit our website or download our app to place your order."],
+            "context_set": ""
+        },
+        {
+            "tag": "cuisine_inquiry",
+            "patterns": ["Other cuisines?", "Non-South Indian options?", "Anything besides South Indian?"],
+            "responses": ["While our focus is on South Indian cuisine, we also offer select fusion dishes and alternatives to cater to different preferences."],
+            "context_set": ""
+        }
+    ]
+}
